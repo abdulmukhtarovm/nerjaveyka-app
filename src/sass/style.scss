@@ -443,9 +443,13 @@ body {
             transform: translateX(-50%);
             content: "";
             bottom: 0;
-            width: 50%;
+            width: 100px;
             height: 2px;
             background: $darkBlue;
+
+            @media (max-width:992px) {
+                width: 30px;
+            }
         }
     }
 
@@ -569,6 +573,7 @@ body {
                 color: $purple;
                 text-transform: uppercase;
                 border-bottom: 1px solid $purple;
+                display: inline-block !important;
             }
         }
     }
@@ -584,7 +589,7 @@ body {
             h2 {
                 font-size: 44px;
                 margin-bottom: 20px;
-                text-align: center;
+                text-align: start;
             }
 
             h3 {

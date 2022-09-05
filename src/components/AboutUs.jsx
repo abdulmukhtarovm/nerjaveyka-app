@@ -6,7 +6,7 @@ const AboutUs = () => {
             <div className="text-center">
                 <h2 className='blog-title'>About Us</h2>    
             </div>
-            <div className="row justify-content-cente align-items-center">
+            <div className="row justify-content-center align-items-center">
                 <div className="col-lg-6 col-md-8 mb-4">
                     <div className="info">
                         <p>
