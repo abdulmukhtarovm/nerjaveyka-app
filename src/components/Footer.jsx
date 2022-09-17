@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="row justify-content-between">
                 <div className="col-lg-3 mb-3 mb-lg-0">
                     <div className="card">
-                        <h4>Contacts</h4>
+                        <h4>Контакты</h4>
 
                         <div className="blok mb-4">
                             <h6>Phone</h6>
@@ -34,7 +34,7 @@ const Footer = () => {
                 </div>
                 <div className="col-lg-3">
                     <div className="card mycard">
-                        <h4>Navigation</h4>
+                        <h4>Навигация</h4>
 
                         <ul>
                             <li>
@@ -51,7 +51,7 @@ const Footer = () => {
                             </li>
                         </ul>
                         <div className="blok">
-                            <h6>Social network</h6>
+                            <h6>Мы в</h6>
 
                             <div className="socials d-flex">
                                 <div className="icon">

@@ -6,9 +6,9 @@ const Benefits = () => {
             <div className="row justify-content-center">
                 <div className="col-lg-10">
                     <div className="row justify-content-between">
-                        <div className="col-lg-4">
+                        <div className="col-lg-5">
                             <div className="titles">
-                                <h2 className='blog-title'>Our benefits</h2>
+                                <h2 className='blog-title'>Наши преимущества</h2>
                                 <h3>We craft awesome stuff with great experiences</h3>
                             </div>
                         </div>

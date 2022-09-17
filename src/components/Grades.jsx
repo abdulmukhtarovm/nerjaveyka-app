@@ -5,7 +5,7 @@ const Grades = () => {
   return (
     <div className='Grades'>
          <div className="text-center">
-                <h2 className='blog-title'>Steel grades</h2>    
+                <h2 className='blog-title'>Материалы продукции</h2>    
             </div>
         <div className="row justify-content-center">
             <div className="col-lg-4 col-md-6 mb-lg-0 mb-3">
@@ -16,7 +16,7 @@ const Grades = () => {
                     <div className="text">
                         <h5>AISI 304</h5>
                         <p>Contains Nickel, Acid Resistant Stainless Steel</p>
-                        <Link to="/catalog">Learn more</Link>
+                        <Link to="/catalog">ПОДРОБНЕЕ</Link>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@ const Grades = () => {
                     <div className="text">
                         <h5>AISI 430</h5>
                         <p>Contains carbon, for products not in contact with moisture</p>
-                        <Link to="/catalog">Learn more</Link>
+                        <Link to="/catalog">ПОДРОБНЕЕ</Link>
                     </div>
                 </div>
             </div>

@@ -15,7 +15,7 @@ const Products = () => {
     return (
         <div className='Products'>
             <div className="text-center">
-                <h2 className='blog-title'>Featured Products</h2>
+                <h2 className='blog-title'>Наши продукты</h2>
                 <ul tabs>
                 <li>
                     <button
@@ -224,7 +224,7 @@ const Products = () => {
                 </div>
             </div> */}
             <div className="text-center buy-btn">
-                <Link className='btn' to="/catalog">VIEW ALL</Link>
+                <Link className='btn' to="/catalog">ПОСМОТРЕТЬ ВСЕ</Link>
             </div>
         </div>
     )

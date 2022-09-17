@@ -4,7 +4,7 @@ const Portfolio = () => {
     return (
         <div className='Portfolio'>
             <div className="text-center">
-                <h2 className='blog-title'>Portfolio</h2>
+                <h2 className='blog-title'>Портфолио</h2>
             </div>
 
             <div className="image-gallary">
@@ -31,7 +31,7 @@ const Portfolio = () => {
                 </div>
             </div>
             <div className="buy-btn text-center">
-                <a className='btn' href="#portfolio">View all</a>
+                <a className='btn' href="#portfolio">Посмотреть все</a>
             </div>
         </div>
     )

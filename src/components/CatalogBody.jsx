@@ -29,7 +29,7 @@ const menu = [
 const CatalogBody = () => {
     const [sort, setSort] = useState(true)
     const [plitka, setPlitka] = useState("square")
-    const [active, setActive] = useState(false);
+    // const [active, setActive] = useState(false);
     const [menus, setMenus] = useState([]);
     const [loading, setLoading] = useState(false);
 
@@ -37,7 +37,7 @@ const CatalogBody = () => {
         if ((id === 23) || id === undefined) {
             try {
                 setLoading(true)
-                const res = await axios.get(`https://nerjavika.herokuapp.com/product/product-list/`)
+                const res = await axios.get(`http://backend.metallart.uz/`)
                 setMenus(res.data);
                 setLoading(false)
             }
@@ -48,7 +48,7 @@ const CatalogBody = () => {
         else if (id) {
             try {
                 setLoading(true)
-                const res = await axios.get(`https://nerjavika.herokuapp.com/product/product-list/?id=${id}`)
+                const res = await axios.get(`http://backend.metallart.uz/?id=${id}`)
                 console.log(res.data);
                 setMenus(res.data);
                 setLoading(false)
@@ -90,7 +90,7 @@ const CatalogBody = () => {
                     <div className="col-lg-3">
                         <div className="categories">
                             <div className="cat-top">
-                                <h4>Categories</h4>
+                                <h4>Категории</h4>
                             </div>
                             <div className="cat-body">
                                 <ul>
@@ -105,7 +105,7 @@ const CatalogBody = () => {
                     </div>
                     <div className="col-lg-9">
                         <div className="product-menu">
-                            <div className="sorting d-none d-lg-block">
+                            <div className="sorting d-none d-lg-flex">
                                 <div className="buttons">
                                     <div onClick={changeHendler2} className={`kvadrat ${sort ? 'sorted' : ''}`}>
                                         <div class="item"></div>
