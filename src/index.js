@@ -10,17 +10,19 @@ import ScrollToTop from './components/ScrollToTop';
 import CatalogPage from './Pages/CatalogPage';
 import AboutPage from './Pages/AboutPage';
 import ContactsPage from './Pages/ContactsPage';
-
+import PortfolioPage from './Pages/PortfolioPage';
+// import { getText } from '../locales'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <HashRouter>
     <Navbar />
     <ScrollToTop />
     <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/catalog" element={<CatalogPage />} />
-      <Route path="/about" element={<AboutPage />} />
-      <Route path="/contacts" element={<ContactsPage />} />
+      <Route path="/" exact element={<App />} />
+      <Route path="/catalog" exact element={<CatalogPage />} />
+      <Route path="/about" exact element={<AboutPage />} />
+      <Route path="/contacts" exact element={<ContactsPage />} />
+      <Route path="/portfolio" exact element={<PortfolioPage />} />
     </Routes>
     <Footer />
   </HashRouter>

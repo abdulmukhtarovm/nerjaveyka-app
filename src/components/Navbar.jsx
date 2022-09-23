@@ -28,13 +28,13 @@ const Navbar = () => {
             <div className={`navBar ${navbar ? 'active' : ''}`}>
 
                 <div className="container">
-                    <div className="row justify-content-between align-content-center">
-                        <div className="col-2">
+                    <div className="row justify-content-between align-items-center">
+                        <div className="col-lg-3 col-6">
                             <div className="logo">
-                                <Link to="/">LOGO</Link>
+                                <Link to="/"><img className='w-100' src="img/logo.png" alt="" /></Link>
                             </div>
                         </div>
-                        <div className={`col-5 mobileWrap ${burger ? '' : 'burgered'}`}>
+                        <div className={`col-6 mobileWrap ${burger ? '' : 'burgered'} `}>
                             <ul className="nav-menu">
                                 <li>
                                     <Link className={`${location.pathname === '/' ? 'active-link' : ''}`} onClick={() => setBurger(!burger)} to="/">{getText("home")}</Link>
@@ -44,6 +44,9 @@ const Navbar = () => {
                                 </li>
                                 <li>
                                     <Link className={`${location.pathname === '/about' ? 'active-link' : ''}`} onClick={() => setBurger(!burger)} to="/about">{getText("about")}</Link>
+                                </li>
+                                <li>
+                                    <Link className={`${location.pathname === '/about' ? 'active-link' : ''}`} onClick={() => setBurger(!burger)} to="/portfolio">{getText("portfolio")}</Link>
                                 </li>
                                 <li>
                                     <Link className={`${location.pathname === '/contacts' ? 'active-link' : ''}`} onClick={() => setBurger(!burger)} to="/contacts">{getText("contacts")}</Link>
@@ -56,14 +59,14 @@ const Navbar = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div className="col-1 d-lg-block d-none">
+                        {/* <div className="col-1 d-lg-block d-none">
                             <div className="lang">
                                 <select className='siteLang' onChange={changeLanguage}>
                                     <option value="ru" selected={getLanguage() === "ru"} >Ру</option>
                                     <option value="uz" selected={getLanguage() === "uz"} >Uz</option>
                                 </select>
                             </div>
-                        </div>
+                        </div> */}
                         <div onClick={() => setBurger(!burger)} className={`burger pr-4 ml-auto d-flex d-lg-none ${burger ? 'burgered' : ''}`}>
                             <div className="burger1"></div>
                             <div className="burger2"></div>
@@ -73,7 +76,7 @@ const Navbar = () => {
                 </div>
 
             </div>
-
+                        <div className="navbarLine"></div>
         </>
     )
 }

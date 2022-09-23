@@ -1,4 +1,5 @@
 import React from 'react'
+import { getText } from '../locales'
 
 const AboutBody = () => {
     return (
@@ -13,7 +14,9 @@ const AboutBody = () => {
                     <div className="col-lg-4">
                         <div className="info">
                             <h3>О компании</h3>
-                            <p>Integer tincidunt ultricies mauris sollicitudin urna est urna, sem in. Nisi ultricies vivamus enim, sed. Augue pharetra, adipiscing quis velit mi mattis eget sem molestie. Purus volutpat sed id mauris, feugiat. Dui eu, massa arcu semper sed natoque pharetra neque. Praesent sed integer purus, varius mattis. Enim morbi eros pharetra, lobortis. Cras fringilla feugiat velit natoque odio. Ipsum convallis donec consequat sagittis, et feugiat orci, rutrum ut. Ultrices orci massa aliquam magna massa cursus nisi, eleifend.Dignissim consequat urna integer eu adipiscing tortor. Velit ac enim, commodo, posuere. Turpis duis bibendum malesuada condimentum. Bibendum sed nulla eleifend aliquet sed. Dictum mauris, ligula tellus tortor ut massa. </p>
+                            <p>{getText("about1")}</p>
+                        <p>{getText("about2")}</p>
+                        <p className='d-lg-block d-none'>{getText("about3")}</p>
                         </div>
                     </div>
                 </div>
